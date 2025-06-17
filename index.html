@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groov - Music App for Bars & Pubs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Groov</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#engagement" class="nav-link">Engagement</a></li>
+                <li><a href="#signup" class="nav-link">Sign Up</a></li>
+                <li><a href="#demo" class="nav-link">Demo</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Bad music gets noticed, good music gets sales.</h1>
+                <p class="hero-subtitle">The first music app built for bars and pubs.</p>
+                <div class="hero-buttons">
+                    <a href="#signup" class="btn btn-primary">Sign up for beta</a>
+                    <a href="#demo" class="btn btn-secondary">Request a Demo</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://pixabay.com/get/g2d85c17ed6ef66cc0204b01464607cd390e5116e2b7b4cff99e562db21eaac01450928f4fe1ac24949055bcc7da6f0365393b7f7c5a18dc6e31a9189819de572_1280.jpg" alt="Bar atmosphere with music" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="features-content">
+                <div class="features-text">
+                    <h2 class="section-title">Your venue, your vibe.</h2>
+                    <p class="section-description">Setup a musical profile for your bar through genres, playlists, and moods. Keep only the tunes that make your venue unique.</p>
+                </div>
+                <div class="features-image">
+                    <img src="https://pixabay.com/get/gc0cf87e4fda0482392286cc83b694faf39a71be648d167446b3ea3ae89776370e32a33dbf2a02de2926b52449b779959a8b29ab03a622372c12ea0a9f16b506d_1280.jpg" alt="Modern pub interior" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Engagement Section -->
+    <section id="engagement" class="engagement">
+        <div class="container">
+            <div class="engagement-content">
+                <div class="engagement-image">
+                    <img src="https://pixabay.com/get/g73a26bedd65498e57a93b8ab17f52cbea5122d47c2761d71971a82a90533bdc7bde83d6d6b8de0fd776e5a9f818d24e15e034195c4b9daaa19d0ac89c5187dfa_1280.jpg" alt="Music technology interface" loading="lazy">
+                </div>
+                <div class="engagement-text">
+                    <p class="engagement-description">Let your customers connect and engage. Allow your customers to build the musical atmosphere they want.</p>
+                    <a href="#demo" class="btn btn-primary">Request a Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signup Section -->
+    <section id="signup" class="signup">
+        <div class="container">
+            <div class="signup-content">
+                <h2 class="section-title">Let's get groovy.</h2>
+                <form class="signup-form" id="signupForm">
+                    <div class="form-group">
+                        <input type="text" id="signupName" name="name" placeholder="Your Name" required>
+                        <span class="error-message" id="signupNameError"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="signupEmail" name="email" placeholder="Your Email" required>
+                        <span class="error-message" id="signupEmailError"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Sign Up for Beta</button>
+                </form>
+                <div class="form-success" id="signupSuccess">
+                    <p>Thank you for signing up! We'll be in touch soon.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Request Section -->
+    <section id="demo" class="demo">
+        <div class="container">
+            <div class="demo-content">
+                <h2 class="section-title">Book a Demo for your bar!</h2>
+                <form class="demo-form" id="demoForm">
+                    <div class="form-group">
+                        <input type="text" id="demoName" name="name" placeholder="Your Name" required>
+                        <span class="error-message" id="demoNameError"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="demoEmail" name="email" placeholder="Your Email" required>
+                        <span class="error-message" id="demoEmailError"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="demoMessage" name="message" placeholder="Tell us about your venue" rows="4" required></textarea>
+                        <span class="error-message" id="demoMessageError"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Request Demo</button>
+                </form>
+                <div class="form-success" id="demoSuccess">
+                    <p>Demo request submitted! We'll contact you within 24 hours.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is Groov?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Groov is a music app built from feedback from bar & pub owners, that engages with your customers.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How does it compensate artists fairly?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We're an affiliate partner to Soundtrack Your Brand, which handles commercial licensing.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I book a demo?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Email hello@getgroovy.app with your name, number, and venue.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>When will Groov be released?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We're testing our web app now, and expect to launch the full app by the end of 2025.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Groov</h3>
+                    <p>Music for bars and pubs</p>
+                </div>
+                <div class="footer-contact">
+                    <p>Contact us: <a href="mailto:hello@getgroovy.app">hello@getgroovy.app</a></p>
+                    <p>&copy; 2025 Groov. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
